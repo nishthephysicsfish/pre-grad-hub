@@ -1,184 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Accolades</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      background: #f8fafc;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 850px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-      padding: 32px 24px;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 24px;
-      color: #2c3e50;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .accolade-list {
-      list-style: decimal inside;
-      padding-left: 0;
-    }
-    .accolade {
-      margin-bottom: 24px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid #eee;
-    }
-    .accolade:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    .accolade-title {
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: #34495e;
-      margin-bottom: 4px;
-    }
-    .accolade-desc {
-      margin-bottom: 4px;
-      color: #555;
-    }
-    .accolade-link {
-      font-size: 0.98rem;
-      color: #0074d9;
-      text-decoration: none;
-      transition: color 0.2s;
-      margin-left: 5px;
-    }
-    .accolade-link:hover {
-      color: #005fa3;
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      .container {
-        padding: 16px 6px;
-      }
-      h1 {
-        font-size: 1.4rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <title>Accolades</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .intro {
+            max-width: 900px;
+            margin: 40px auto 20px auto;
+            background: #e3f0fd;
+            color: #183153;
+            font-size: 1.07rem;
+            padding: 1.5em 2em;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(24,49,83,0.08);
+        }
+        .intro h2 {
+            color: #2263c6;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        h1 {
+            color: #1a237e;
+            max-width: 900px;
+            margin: 0 auto 20px auto;
+            padding: 0 10px;
+        }
+        ol {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 1em 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            list-style: decimal inside;
+        }
+        li.accolade {
+            margin-bottom: 1.5em;
+            font-size: 1.1em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1em;
+        }
+        li.accolade:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .accolade-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #34495e;
+            margin-bottom: 0.3em;
+        }
+        .accolade-desc {
+            color: #555;
+            margin-bottom: 0.4em;
+        }
+        a.accolade-link {
+            font-size: 0.98rem;
+            color: #0074d9;
+            text-decoration: none;
+            transition: color 0.2s;
+            margin-left: 5px;
+        }
+        a.accolade-link:hover,
+        a.accolade-link:focus {
+            color: #005fa3;
+            text-decoration: underline;
+            outline: none;
+        }
+        @media (max-width: 600px) {
+            .intro {
+                max-width: 92%;
+                padding: 1.2em 1.4em;
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            ol {
+                max-width: 92%;
+                padding: 1em 1.2em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-      <div style="margin-bottom: 32px; color: #444; font-size: 1.07rem;">
-      Accolades are more than titles—they’re proof of the credibility and commitment you’ve shown as a student. Whether in academics, leadership, or service, formal recognition not only validates your journey so far, but encourages you and those around you to aim even higher. <br><br>
-      Remember: every student begins on equal footing and it's never wrong to dream big—by applying, you give yourself a real (often 50%) chance at earning these honors. Believing in your potential is the first step; recognition follows naturally when you pursue excellence with determination and an open mind.
+
+    <div class="intro" role="region" aria-label="Introduction to Accolades">
+        <h2>Why Accolades Are Important for Students</h2>
+        <p>
+            Accolades are more than just honors—they validate the credibility and dedication you have already demonstrated as a student. Whether through academic achievements, leadership roles, or community service, receiving formal recognition affirms your hard work and sets you apart.<br><br>
+            Remember, every student starts on an equal playing field, and it’s never wrong to dream big. Awards and scholarships are opportunities open to all who apply thoughtfully and with determination. By putting yourself forward, you give yourself a meaningful chance to be recognized and to open doors for your future.<br><br>
+            Embrace your achievements and continue aiming high: accolades are proof of your journey and a stepping stone toward your goals.
+        </p>
     </div>
+
     <h1>🏅 Accolades</h1>
-    <ol class="accolade-list">
-      <li class="accolade">
-        <div class="accolade-title">Barry Goldwater Scholarship</div>
-        <div class="accolade-desc">For outstanding sophomores and juniors pursuing research careers in natural sciences, engineering, and mathematics.</div>
-        <a class="accolade-link" href="https://goldwaterscholarship.gov" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Rhodes Scholarship</div>
-        <div class="accolade-desc">Prestigious international award for study at the University of Oxford; open to exceptional students from the US and worldwide.</div>
-        <a class="accolade-link" href="https://www.rhodeshouse.ox.ac.uk/scholarships/apply" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Marshall Scholarship</div>
-        <div class="accolade-desc">Graduate study in the United Kingdom for outstanding American students; highly competitive and prestigious.</div>
-        <a class="accolade-link" href="https://www.marshallscholarship.org" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Truman Scholarship</div>
-        <div class="accolade-desc">For juniors with exceptional leadership potential committed to public service careers; provides funding for graduate study.</div>
-        <a class="accolade-link" href="https://www.truman.gov" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Udall Scholarship</div>
-        <div class="accolade-desc">For sophomores and juniors committed to careers related to the environment, tribal public policy, or Native American health care.</div>
-        <a class="accolade-link" href="https://www.udall.gov/OurPrograms/Scholarship/Scholarship.aspx" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Gates Cambridge Scholarship</div>
-        <div class="accolade-desc">For outstanding students from outside the UK to pursue a full-time postgraduate degree at the University of Cambridge.</div>
-        <a class="accolade-link" href="https://www.gatescambridge.org" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Fulbright U.S. Student Program</div>
-        <div class="accolade-desc">Grants for individually designed study/research projects or English Teaching Assistant Programs abroad.</div>
-        <a class="accolade-link" href="https://us.fulbrightonline.org" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Boren Scholarship</div>
-        <div class="accolade-desc">For undergraduates to study less commonly taught languages in world regions critical to US interests.</div>
-        <a class="accolade-link" href="https://www.borenawards.org" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Churchill Scholarship</div>
-        <div class="accolade-desc">For American students to pursue graduate study in science, mathematics, or engineering at the University of Cambridge.</div>
-        <a class="accolade-link" href="https://churchillscholarship.org" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Stamps Scholarship</div>
-        <div class="accolade-desc">Merit-based scholarship for undergraduate study at partner universities, covering full tuition and enrichment funds.</div>
-        <a class="accolade-link" href="https://www.stampsscholars.org" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Coca-Cola Scholars Program</div>
-        <div class="accolade-desc">Recognizes high school seniors for leadership, service, and academic achievement; provides substantial college scholarships.</div>
-        <a class="accolade-link" href="https://www.coca-colascholarsfoundation.org" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Jack Kent Cooke Foundation Undergraduate Transfer Scholarship</div>
-        <div class="accolade-desc">For high-achieving community college students transferring to four-year institutions.</div>
-        <a class="accolade-link" href="https://www.jkcf.org/our-scholarships/undergraduate-transfer-scholarship" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Davidson Fellows Scholarship</div>
-        <div class="accolade-desc">For students under 18 who have completed significant work in science, technology, engineering, mathematics, literature, music, philosophy, or outside the box.</div>
-        <a class="accolade-link" href="https://www.davidsongifted.org/fellowships" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">DOE University Nuclear Leadership Program (UNLP) Undergraduate Scholarship</div>
-        <div class="accolade-desc">For students pursuing nuclear energy-related degrees; awards up to $10,000 for tuition and expenses.</div>
-        <a class="accolade-link" href="https://neup.inl.gov/students/scholarships/" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">DOE Scholars Program</div>
-        <div class="accolade-desc">Paid internships and fellowships for students and recent graduates to gain experience at the Department of Energy.</div>
-        <a class="accolade-link" href="https://www.energy.gov/eere/fuelcells/scholarships-internships-and-fellowships" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">NNSA PATH (Program Award for Technical and Higher-Education) Scholarship</div>
-        <div class="accolade-desc">For students from Minority Serving Institutions pursuing STEM degrees related to nuclear security; awards up to $10,000 per year.</div>
-        <a class="accolade-link" href="https://www.zintellect.com/Opportunity/Details/2025-NNSA-PATH-Scholarships" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">SMART Scholarship-for-Service Program (DOD)</div>
-        <div class="accolade-desc">Department of Defense program supporting undergraduate and graduate students in STEM fields with full tuition and stipends in exchange for service.</div>
-        <a class="accolade-link" href="https://www.smartscholarship.org" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Hertz Fellowship</div>
-        <div class="accolade-desc">For graduate study in applied physical, biological, and engineering sciences; highly competitive for STEM students.</div>
-        <a class="accolade-link" href="https://www.hertzfoundation.org/fellowships" target="_blank">Learn more</a>
-      </li>
-      <li class="accolade">
-        <div class="accolade-title">Astronaut Scholarship</div>
-        <div class="accolade-desc">For outstanding sophomores and juniors in STEM fields intending to pursue research careers; provides up to $15,000 and significant professional development opportunities.</div>
-        <a class="accolade-link" href="https://www.astronautscholarship.org/programs/astronaut-scholarship/" target="_blank">Learn more</a>
-      </li>
+    <ol>
+        <li class="accolade">
+            <div class="accolade-title">Barry Goldwater Scholarship</div>
+            <div class="accolade-desc">For outstanding sophomores and juniors pursuing research careers in natural sciences, engineering, and mathematics.</div>
+            <a class="accolade-link" href="https://goldwaterscholarship.gov" target="_blank" rel="noopener noreferrer">Learn more</a>
+        </li>
+        <li class="accolade">
+            <div class="accolade-title">Rhodes Scholarship</div>
+            <div class="accolade-desc">Prestigious international award for study at the University of Oxford; open to exceptional students from the US and worldwide.</div>
+            <a class="accolade-link" href="https://www.rhodeshouse.ox.ac.uk/scholarships/apply" target="_blank" rel="noopener noreferrer">Learn more</a>
+        </li>
+        <li class="accolade">
+            <div class="accolade-title">Marshall Scholarship</div>
+            <div class="accolade-desc">Graduate study in the United Kingdom for outstanding American students; highly competitive and prestigious.</div>
+            <a class="accolade-link" href="https://www.marshallscholarship.org" target="_blank" rel="noopener noreferrer">Learn more</a>
+        </li>
+        <li class="accolade">
+            <div class="accolade-title">Truman Scholarship</div>
+            <div class="accolade-desc">For juniors with exceptional leadership potential committed to public service careers; provides funding for graduate study.</div>
+            <a class="accolade-link" href="https://www.truman.gov" target="_blank" rel="noopener noreferrer">Learn more</a>
+        </li>
+        <li class="accolade">
+            <div class="accolade-title">Udall Scholarship</div>
+            <div class="accolade-desc">For sophomores and juniors committed to careers related to the environment, tribal public policy, or Native American health care.</div>
+            <a class="accolade-link" href="https://www.udall.gov/OurPrograms/Scholarship/Scholarship.aspx" target="_blank" rel="noopener noreferrer">Learn more</a>
+        </li>
+        <li class="accolade">
+            <div class="accolade-title">Gates Cambridge Scholarship</div>
+            <div class="accolade-desc">For outstanding students from outside the UK to pursue a full-time postgraduate degree at the University of Cambridge.</div>
+            <a class="accolade-link" href="https://www.gatescambridge.org" target="_blank" rel="noopener noreferrer">Learn more</a>
+        </li>
+        <li class="accolade">
+            <div class="accolade-title">Fulbright U.S. Student Program</div>
+            <div class="accolade-desc">Grants for individually designed study/research projects or English Teaching Assistant Programs abroad.</div>
+            <a class="accolade-link" href="https://us.fulbrightonline.org" target="_blank" rel="noopener noreferrer">Learn more</a>
+        </li>
+        <li class="accolade">
+            <div class="accolade-title">Boren Scholarship</div>
+            <div class="accolade-desc">For undergraduates to study less commonly taught languages in world regions critical to US interests.</div>
+            <a class="accolade-link" href="https://www.borenawards.org" target="_blank" rel="noopener noreferrer">Learn more</a>
+        </li>
+        <li class="accolade">
+            <div class="accolade-title">Churchill Scholarship</div>
+            <div class="accolade-desc">For American students to pursue graduate study in science, mathematics, or engineering at the University of Cambridge.</div>
+            <a class="accolade-link" href="https://churchillscholarship.org" target="_blank" rel="noopener noreferrer">Learn more</a>
+        </li>
+        <li class="accolade">
+            <div class="accolade-title">Stamps Scholarship</div>
+            <div class="accolade-desc">Merit-based scholarship for undergraduate study at partner universities, covering full tuition and enrichment funds.</div>
+            <a class="accolade-link" href="https://www.stampsscholars.org" target="_blank" rel="noopener noreferrer">Learn more</a>
+        </li>
+        <!-- Add more accolades as needed -->
     </ol>
-  </div>
+
 </body>
 </html>
-
-
-
