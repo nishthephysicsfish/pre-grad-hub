@@ -1,116 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Resume & CV Construction Resources</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+    /* Reset some basic styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
     body {
       background: #f9f9f9;
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
+      color: #2c3e50;
+      line-height: 1.6;
     }
+
     .container {
       max-width: 700px;
-      margin: 40px auto;
+      margin: 40px auto 60px auto;
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-      padding: 32px 24px;
+      padding: 32px 28px;
     }
+
     h1 {
       font-size: 2rem;
-      margin-bottom: 24px;
+      margin-bottom: 30px;
       color: #2c3e50;
       display: flex;
       align-items: center;
       gap: 10px;
+      user-select: none;
     }
+
+    .intro {
+      max-width: 700px;
+      margin: 40px auto 0 auto;
+      background: #e3f0fd;
+      color: #183153;
+      font-size: 1.07rem;
+      padding: 1.5em 2em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(24,49,83,0.08);
+      line-height: 1.6;
+    }
+
+    .intro h2 {
+      color: #2263c6;
+      margin-top: 0;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .intro p {
+      margin-bottom: 0;
+    }
+
     .resource {
       margin-bottom: 24px;
       padding-bottom: 16px;
       border-bottom: 1px solid #eee;
     }
+
     .resource:last-child {
       border-bottom: none;
       margin-bottom: 0;
       padding-bottom: 0;
     }
+
     .resource-title {
       font-size: 1.1rem;
       font-weight: 600;
       color: #34495e;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
+
     .resource-link {
       font-size: 1rem;
       color: #0074d9;
       text-decoration: none;
       transition: color 0.2s;
       display: inline-block;
-      margin-left: 5px;
     }
-    .resource-link:hover {
+
+    .resource-link:hover,
+    .resource-link:focus {
       color: #005fa3;
       text-decoration: underline;
+      outline: none;
     }
+
+    /* Responsive adjustments */
     @media (max-width: 600px) {
       .container {
-        padding: 16px 6px;
+        padding: 20px 16px;
       }
       h1 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+      }
+      .intro {
+        max-width: 90%;
+        margin: 32px auto 24px auto;
+        font-size: 1rem;
+        padding: 1.2em 1.4em;
       }
     }
   </style>
 </head>
 <body>
-  <div class="intro">
-  <h2>Why Your Curriculum Vitae (CV) Matters for Graduate School</h2>
-  <p>
-    A curriculum vitae (CV) is much more than a checklist—it's the most complete record of your academic and professional journey. For graduate school, the CV shows admissions committees your education, research experience, skills, and recognitions, letting them see your full potential and fit for their program.<br><br>
-    Many applicants wait until their final year to assemble a CV, but it's never too early to start taking notes. Regularly updating your CV means you won't forget achievements or contributions, giving you a stronger, more polished application when grad school approaches.<br><br>
-    <strong>Key facts:</strong><br>
-    • The CV is often required for MA/PhD applications, scholarships, and research fellowships.<br>
-    • It should highlight only relevant experiences, organized for clarity and impact.<br>
-    • A well-built CV helps you stand out and ensures your growth is documented—every new project or honor is a building block for your future career.
-  </p>
-</div>
-  <div class="container">
-    <h1>📄 Resume &amp; CV Construction Resources</h1>
-    <div class="resource">
-      <div class="resource-title">Harvard College Bullet Point Resume Template</div>
-      <a class="resource-link" href="https://careerservices.fas.harvard.edu/resources/bullet-point-resume-template/" target="_blank">🔗 Link</a>
-    </div>
-    <div class="resource">
-      <div class="resource-title">University of Michigan Career Center Resume Resources</div>
-      <a class="resource-link" href="https://careercenter.umich.edu/article/resume-resources" target="_blank">🔗 Link</a>
-    </div>
-    <div class="resource">
-      <div class="resource-title">UT Austin CNS Career Services Resume Templates</div>
-      <a class="resource-link" href="https://careerservices.cns.utexas.edu/resources/resumes/templates" target="_blank">🔗 Link</a>
-    </div>
-    <div class="resource">
-      <div class="resource-title">Penn Career Services Undergraduate Resume Samples</div>
-      <a class="resource-link" href="https://careerservices.upenn.edu/preparing-effective-resumes/undergraduates-student-resume-samples/" target="_blank">🔗 Link</a>
-    </div>
-    <div class="resource">
-      <div class="resource-title">WVU Career Services Resume Templates</div>
-      <a class="resource-link" href="https://careerservices.wvu.edu/students/build-a-resume/resume-templates" target="_blank">🔗 Link</a>
-    </div>
-    <div class="resource">
-      <div class="resource-title">MSU Career Services Network Resume Templates</div>
-      <a class="resource-link" href="https://careernetwork.msu.edu/resources/sample-resumes/" target="_blank">🔗 Link</a>
-    </div>
-    <div class="resource">
-      <div class="resource-title">SVSU Career Services Resume Templates</div>
-      <a class="resource-link" href="https://www.svsu.edu/careerservices/getstarted/students/studentresourcehub/resumetemplates/" target="_blank">🔗 Link</a>
-    </div>
-    <div class="resource">
-      <div class="resource-title">UGA Career Center Resume Examples</div>
-      <a class="resource-link" href="https://career.uga.edu/resume_examples" target="_blank">🔗 Link</a>
-    </div>
+
+  <div class="intro" role="region" aria-label="Introduction to Curriculum Vitae Importance">
+    <h2>Why Your Curriculum Vitae (CV) Matters for Graduate School</h2>
+    <p>
+      A curriculum vitae (CV) is much more than a checklist—it's the most complete record of your academic and professional journey. For graduate school, the CV shows admissions committees your education, research experience, skills, and recognitions, letting them see your full potential and fit for their program.<br /><br />
+      Many applicants wait until their final year to assemble a CV, but it's never too early to start taking notes. Regularly updating your CV means you won't forget achievements or contributions, giving you a stronger, more polished application when grad school approaches.<br /><br />
+      <strong>Key facts:</strong><br />
+      • The CV is often required for MA/PhD applications, scholarships, and research fellowships.<br />
+      • It should highlight only relevant experiences, organized for clarity and impact.<br />
+      • A well-built CV helps you stand out and ensures your growth is documented—every new project or honor is a building block for your future career.
+    </p>
   </div>
+
+  <main class="container" role="main" aria-labelledby="resources-heading">
+    <h1 id="resources-heading" aria-label="Resume and CV Construction Resources">📄 Resume &amp; CV Construction Resources</h1>
+
+    <section class="resource">
+      <h3 class="resource-title">Harvard College Bullet Point Resume Template</h3>
+      <a class="resource-link" href="https://careerservices.fas.harvard.edu/resources/bullet-point-resume-template/" target="_blank" rel="noopener noreferrer">🔗 Link</a>
+    </section>
+
+    <section class="resource">
+      <h3 class="resource-title">University of Michigan Career Center Resume Resources</h3>
+      <a class="resource-link" href="https://careercenter.umich.edu/article/resume-resources" target="_blank" rel="noopener noreferrer">🔗 Link</a>
+    </section>
+
+    <section class="resource">
+      <h3 class="resource-title">UT Austin CNS Career Services Resume Templates</h3>
+      <a class="resource-link" href="https://careerservices.cns.utexas.edu/resources/resumes/templates" target="_blank" rel="noopener noreferrer">🔗 Link</a>
+    </section>
+
+    <section class="resource">
+      <h3 class="resource-title">Penn Career Services Undergraduate Resume Samples</h3>
+      <a class="resource-link" href="https://careerservices.upenn.edu/preparing-effective-resumes/undergraduates-student-resume-samples/" target="_blank" rel="noopener noreferrer">🔗 Link</a>
+    </section>
+
+    <section class="resource">
+      <h3 class="resource-title">WVU Career Services Resume Templates</h3>
+      <a class="resource-link" href="https://careerservices.wvu.edu/students/build-a-resume/resume-templates" target="_blank" rel="noopener noreferrer">🔗 Link</a>
+    </section>
+
+    <section class="resource">
+      <h3 class="resource-title">MSU Career Services Network Resume Templates</h3>
+      <a class="resource-link" href="https://careernetwork.msu.edu/resources/sample-resumes/" target="_blank" rel="noopener noreferrer">🔗 Link</a>
+    </section>
+
+    <section class="resource">
+      <h3 class="resource-title">SVSU Career Services Resume Templates</h3>
+      <a class="resource-link" href="https://www.svsu.edu/careerservices/getstarted/students/studentresourcehub/resumetemplates/" target="_blank" rel="noopener noreferrer">🔗 Link</a>
+    </section>
+
+    <section class="resource">
+      <h3 class="resource-title">UGA Career Center Resume Examples</h3>
+      <a class="resource-link" href="https://career.uga.edu/resume_examples" target="_blank" rel="noopener noreferrer">🔗 Link</a>
+    </section>
+  </main>
+  
 </body>
 </html>
