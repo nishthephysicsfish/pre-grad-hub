@@ -5,11 +5,16 @@
   <title>Summer Research Portals</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
     body {
       background: #f8fafc;
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
+      color: #2c3e50;
+      line-height: 1.6;
     }
     .container {
       max-width: 850px;
@@ -18,6 +23,21 @@
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.07);
       padding: 32px 24px;
+    }
+    .intro {
+      max-width: 850px;
+      margin: 0 auto 20px auto;
+      background: #e3f0fd;
+      color: #183153;
+      font-size: 1.07rem;
+      padding: 1.5em 2em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(24,49,83,0.08);
+    }
+    .intro h2 {
+      color: #2263c6;
+      margin-top: 0;
+      font-size: 1.5rem;
     }
     h1 {
       font-size: 2rem;
@@ -63,6 +83,11 @@
       .container {
         padding: 16px 6px;
       }
+      .intro {
+        max-width: 92%;
+        padding: 1.2em 1.4em;
+        font-size: 1rem;
+      }
       h1 {
         font-size: 1.4rem;
       }
@@ -71,6 +96,16 @@
 </head>
 <body>
   <div class="container">
+
+    <div class="intro" role="region" aria-label="Introduction to Summer Research">
+      <h2>Why Summer Research Matters for Undergraduates</h2>
+      <p>
+        Summer research programs offer undergraduates a unique chance to immerse themselves in active inquiry, skill-building, and professional development outside the traditional classroom. Whether you’re exploring STEM, biomedical sciences, or social sciences, these experiences connect you to real-world research projects, mentorship from leading faculty, and a vibrant community of peers.<br><br>
+        Participating in summer research helps you clarify academic interests, strengthen graduate school and fellowship applications, and build crucial skills for your future career—from data analysis, problem-solving, and teamwork, to scientific writing and presentations.<br><br>
+        Many programs are fully funded and designed to foster diversity, making research accessible to students from all backgrounds. Investing in a summer research experience can open doors to new opportunities and set the foundation for long-term success and impact in your chosen field.
+      </p>
+    </div>
+
     <h1>Summer Research Portals</h1>
     <ul class="portal-list">
       <li class="portal">
