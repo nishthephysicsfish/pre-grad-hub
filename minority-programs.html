@@ -5,11 +5,16 @@
   <title>Minority Programs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
     body {
       background: #f8fafc;
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
+      color: #2c3e50;
+      line-height: 1.6;
     }
     .container {
       max-width: 850px;
@@ -18,6 +23,21 @@
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.07);
       padding: 32px 24px;
+    }
+    .intro {
+      max-width: 850px;
+      margin: 40px auto 20px auto;
+      background: #e3f0fd;
+      color: #183153;
+      font-size: 1.07rem;
+      padding: 1.5em 2em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(24,49,83,0.08);
+    }
+    .intro h2 {
+      color: #2263c6;
+      margin-top: 0;
+      font-size: 1.5rem;
     }
     h1 {
       font-size: 2rem;
@@ -47,6 +67,11 @@
       .container {
         padding: 16px 6px;
       }
+      .intro {
+        max-width: 92%;
+        padding: 1.2em 1.4em;
+        font-size: 1rem;
+      }
       h1 {
         font-size: 1.4rem;
       }
@@ -54,6 +79,16 @@
   </style>
 </head>
 <body>
+
+  <div class="intro" role="region" aria-label="Introduction to Minority Programs">
+    <h2>Why Minority Programs Are Valuable for Exposure and Opportunity</h2>
+    <p>
+      Minority programs play a critical role in fostering academic success and professional growth by providing targeted support, mentorship, and resources designed to address the unique challenges faced by underrepresented students. These programs offer exposure to research experiences, leadership development, networking opportunities, and scholarships that open doors otherwise difficult to access.<br><br>
+      By participating in minority-focused initiatives, students gain access to communities that understand and celebrate their backgrounds, creating a supportive environment where they can thrive. This exposure not only boosts confidence and skills but also enhances competitiveness for graduate school, internships, and careers.<br><br>
+      Engaging with minority programs early in your academic journey sets the foundation for lasting achievements and helps bridge gaps that historically have limited opportunities for many talented students.
+    </p>
+  </div>
+
   <div class="container">
     <h1>Minority Programs</h1>
     <ul class="program-list">
@@ -175,5 +210,6 @@
       </li>
     </ul>
   </div>
+
 </body>
 </html>
