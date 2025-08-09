@@ -5,11 +5,16 @@
   <title>Pre-Grad Visitations</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
     body {
       background: #f8fafc;
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
+      color: #2c3e50;
+      line-height: 1.6;
     }
     .container {
       max-width: 850px;
@@ -18,6 +23,21 @@
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.07);
       padding: 32px 24px;
+    }
+    .intro {
+      max-width: 850px;
+      margin: 40px auto 20px auto;
+      background: #e3f0fd;
+      color: #183153;
+      font-size: 1.07rem;
+      padding: 1.5em 2em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(24,49,83,0.08);
+    }
+    .intro h2 {
+      color: #2263c6;
+      margin-top: 0;
+      font-size: 1.5rem;
     }
     h1 {
       font-size: 2rem;
@@ -72,6 +92,11 @@
       .container {
         padding: 16px 6px;
       }
+      .intro {
+        max-width: 92%;
+        padding: 1.2em 1.4em;
+        font-size: 1rem;
+      }
       h1 {
         font-size: 1.4rem;
       }
@@ -79,6 +104,15 @@
   </style>
 </head>
 <body>
+
+  <div class="intro" role="region" aria-label="Introduction to Pre-Grad Visitation Programs">
+    <h2>Why Pre-Grad Visitation Programs Matter</h2>
+    <p>
+      Pre-graduate visitation programs offer prospective graduate students a unique opportunity to explore campuses, engage directly with faculty and current students, and gain firsthand insight into graduate school life and academic culture. These programs, often designed for underrepresented or diverse scholars, provide critical exposure to the resources, research opportunities, and community support that shape graduate education.<br><br>
+      Participating in visitation programs helps you evaluate fit, clarify academic and professional goals, and build connections that can significantly strengthen your graduate school application and future career. Many programs cover travel and lodging costs, making them accessible and invaluable for advancing your graduate education journey.
+    </p>
+  </div>
+
   <div class="container">
     <h1>Pre-Grad Visitations</h1>
     <ol class="visit-list">
@@ -133,5 +167,6 @@
       </li>
     </ol>
   </div>
+
 </body>
 </html>
